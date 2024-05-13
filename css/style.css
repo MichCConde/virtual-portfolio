@@ -389,7 +389,7 @@ a:focus {
 .quote_section {
   background-image: url(../images/heroSection.png);
   color: white;
-  margin: 4% 0;
+  margin: 4% 0 0 0;
 }
 .quote_section .box {
   display: -webkit-box;
@@ -417,14 +417,20 @@ a:focus {
   border-color: #d90429;
   color: #d90429;
 }
+.contact_section {
+  padding: 20px 0;
+}
 .contact_section .contact_bg {
   background-color: #ffffff;
+}
+.contact_section .row {
+  padding: 0 0 10% 0;
 }
 .contact_section .heading_container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 45px;
+  margin-bottom: 10px;
 }
 .contact_section .contact_form {
   padding-left: 25px;
@@ -485,9 +491,8 @@ a:focus {
   color: #d90429;
 }
 .contact_section .img-box img {
-  max-height: 500px;
+  max-height: 400px;
   height: 100%;
-  filter: hue-rotate(56deg) saturate(120%) brightness(100%);
 }
 .contact_section .img-box {
   margin: 0 10%;
@@ -709,4 +714,20 @@ footer li, a {
   text-align: center;
   padding: 3px;
   color: white;
+}
+
+/*================================================
+=========== Reveal Style Effects =================
+==================================================*/
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.rActive {
+  transform: translateY(0px);
+  opacity: 1;
 }

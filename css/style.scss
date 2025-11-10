@@ -377,62 +377,69 @@ a:focus {
 // contact section
 
 .contact_section {
-    .contact_bg {
-        background-color: $white;
+  .contact_bg {
+    background-color: $white;
+  }
+
+  .heading_container {
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+
+  .contact_form {
+    padding-left: 25px;
+    padding-right: 25px;
+
+    .top_input {
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        width: 48%;
+      }
     }
 
-    .heading_container {
-        justify-content: center;
-        margin-bottom: 45px;
+    input,
+    textarea {
+      width: 100%;
+      display: block;
+      margin: 15px 0;
+      border: none;
+      outline: none;
+      background-color: #1c1b2d;
+      color: $white;
+      padding: 15px;
+      box-sizing: border-box;
+
+      &::placeholder {
+        color: rgba($white, 0.8);
+      }
     }
 
-    .contact_form {
-        padding-left: 25px;
-        padding-right: 25px;
-
-        .top_input {
-            display: flex;
-            justify-content: space-between;
-
-            input {
-                width: 48%;
-            }
-
-        }
-
-        input {
-            width: 100%;
-            margin: 15px 0;
-            height: 50px;
-            padding-left: 15px;
-            border: none;
-            outline: none;
-            background-color: #1c1b2d;
-            color: $white;
-
-            &.message_input {
-                padding: 25px 0 90px 15px;
-            }
-
-            &::placeholder {
-                color: rgba($color: $white, $alpha: .8);
-            }
-        }
-
-        button {
-            @include hero_btn($primary1, $white, 8px, 35px, 5px);
-            margin-top: 15px;
-            margin-bottom: 45px;
-        }
+    textarea.message_input {
+      height: 120px; // adjust as needed for height
+      resize: vertical;
+      line-height: 1.4;
+      padding: 15px; // uniform padding to match input
+      width: 100%; // ensures same width
+      display: block;
     }
 
-    .img-box {
-        img {
-            width: 100%;
-        }
+    button {
+      @include hero_btn($primary1, $white, 8px, 35px, 5px);
+      margin-top: 15px;
+      margin-bottom: 45px;
     }
+  }
 
+  .img-box {
+    img {
+      width: 100%;
+    }
+  }
 }
+
+
 
 // end contact section
 

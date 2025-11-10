@@ -34,6 +34,47 @@
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 
+<style>
+    /* Accordion button style (to match MY WORKS buttons) */
+  #opsAccordion .btn-link {
+    border: 2px solid #d50000; /* red border */
+    color: #d50000; /* red text */
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  #opsAccordion .btn-link:hover,
+  #opsAccordion .btn-link:focus,
+  #opsAccordion .btn-link:not(.collapsed) {
+    background-color: #d50000; /* red fill */
+    color: #fff; /* white text */
+    text-decoration: none;
+    box-shadow: none;
+  }
+
+  #opsAccordion .card {
+    border: none;
+    margin-bottom: 10px;
+    background-color: transparent;
+  }
+
+  #opsAccordion .card-body {
+    border: 1px solid #eee;
+    border-top: none;
+    padding: 20px;
+    background: #fff;
+  }
+  #opsAccordion .btn-link,
+  #opsAccordion .card,
+  #opsAccordion .card-body {
+    border-radius: 0 !important;
+  }
+</style>
+
 <body class="sub_page">
   <div class="hero_area">
     <header id="header" class="header_section">
@@ -84,6 +125,117 @@
             My Services
           </h2>
         </div>
+      </div>
+      <div class="container">
+
+      <!-- Operations & Systems (Dropdown) -->
+      <div class="row">
+        <div class="col-12">
+          <div id="opsAccordion" class="accordion mb-5">
+
+            <!-- Operations Management -->
+            <div class="card">
+              <div class="card-header p-0" id="opsHeading">
+                <h5 class="mb-0">
+                  <button class="btn btn-link btn-block text-left py-3 px-4"
+                          type="button" data-toggle="collapse" data-target="#opsCollapse"
+                          aria-expanded="true" aria-controls="opsCollapse">
+                    <span style="margin-right:.5rem;">⚙️</span> Operations Management Package
+                  </button>
+                </h5>
+              </div>
+              <div id="opsCollapse" class="collapse show" aria-labelledby="opsHeading" data-parent="#opsAccordion">
+                <div class="card-body">
+                  <p>For businesses that need structure, clarity, and accountability.</p>
+                  <ul class="mb-0">
+                    <li>Workflow & systems audit</li>
+                    <li>SOPs and role guidelines</li>
+                    <li>Reporting & attendance tracking setup</li>
+                    <li>Team comms cadence (channels & check-ins)</li>
+                    <li>Monthly performance & ops review</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Systems & Process Design -->
+            <div class="card">
+              <div class="card-header p-0" id="sysHeading">
+                <h5 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed py-3 px-4"
+                          type="button" data-toggle="collapse" data-target="#sysCollapse"
+                          aria-expanded="false" aria-controls="sysCollapse">
+                    <span style="margin-right:.5rem;">💻</span> Systems & Process Design Package
+                  </button>
+                </h5>
+              </div>
+              <div id="sysCollapse" class="collapse" aria-labelledby="sysHeading" data-parent="#opsAccordion">
+                <div class="card-body">
+                  <p>Automation + visibility for efficient execution.</p>
+                  <ul class="mb-0">
+                    <li>Operational dashboards (Notion / Sheets / Airtable)</li>
+                    <li>Process mapping & documentation</li>
+                    <li>Automated reporting & progress tracking</li>
+                    <li>Recruitment & project pipelines with stage gates</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Training -->
+            <div class="card">
+              <div class="card-header p-0" id="trainHeading">
+                <h5 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed py-3 px-4"
+                          type="button" data-toggle="collapse" data-target="#trainCollapse"
+                          aria-expanded="false" aria-controls="trainCollapse">
+                    <span style="margin-right:.5rem;">👥</span> Team Training & Development Package
+                  </button>
+                </h5>
+              </div>
+              <div id="trainCollapse" class="collapse" aria-labelledby="trainHeading" data-parent="#opsAccordion">
+                <div class="card-body">
+                  <p>Onboarding that sticks. Teams that scale themselves.</p>
+                  <ul class="mb-0">
+                    <li>Custom 10-Day Onboarding & Training Program</li>
+                    <li>Role KPIs, scorecards & feedback loops</li>
+                    <li>Leadership cadence (weekly / monthly / quarterly)</li>
+                    <li>Pro comms & coaching frameworks</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Executive Support -->
+            <div class="card">
+              <div class="card-header p-0" id="execHeading">
+                <h5 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed py-3 px-4"
+                          type="button" data-toggle="collapse" data-target="#execCollapse"
+                          aria-expanded="false" aria-controls="execCollapse">
+                    <span style="margin-right:.5rem;">🚀</span> Executive Support & Scaling Package
+                  </button>
+                </h5>
+              </div>
+              <div id="execCollapse" class="collapse" aria-labelledby="execHeading" data-parent="#opsAccordion">
+                <div class="card-body">
+                  <p>Delegate confidently and grow without chaos.</p>
+                  <ul class="mb-0">
+                    <li>Delegation framework for leaders & teams</li>
+                    <li>Hiring flow & candidate tracking</li>
+                    <li>Executive KPI dashboard</li>
+                    <li>Quarterly scaling roadmap</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- /Operations & Systems -->
+
+
       </div>
       <div class="container">
         <div class="row">
@@ -198,6 +350,10 @@
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script src="script.js"></script>
+    <!-- before closing </body> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
 
 </body>
 

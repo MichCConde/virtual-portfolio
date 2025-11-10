@@ -108,11 +108,11 @@
                         <h1>
                           I'm a <br>
                           <span>
-                            Full-stack developer
+                            multi-disciplinary professional
                           </span>
                         </h1>
                         <p>
-                          21-year-old professional taking up Computer Science
+                          22-year-old professional, who bridges creativity, strategy, and execution.
                         </p>
                         <div class="btn-box">
                           <a href="https://calendly.com/michellecconde/30min" target="_blank" class="btn-1">
@@ -158,7 +158,10 @@
                 </h2>
               </div>
               <p>
-                I’m Michelle Conde, a 21-year-old professional taking up a Bachelor of Science in Computer Science. My passion lies at the intersection of technology and creativity, and I bring a versatile skill set to the table.
+                I’m Michelle Ann Conde, an Operations Manager passionate about building efficient systems, managing people with purpose, and creating structure that drives results. With years of experience in operations, recruitment, and team management, I specialize in designing workflows that help businesses scale smoothly — combining strategy, technology, and human insight to achieve sustainable growth. 
+                <br>
+                <br>
+                I thrive in dynamic environments where clarity and efficiency make the difference. My leadership approach focuses on accountability, seamless communication, and continuous improvement, ensuring teams perform at their highest potential.
               </p>
               <a href="https://calendly.com/michellecconde/30min" target="_blank">
                 Let's Talk
@@ -181,10 +184,34 @@
             </h2>
           </div>
         </div>
+
         <div class="container">
+
+          <!-- Single Operations Package Row -->
+          <div class="row">
+            <div class="col-12 reveal">
+              <div class="box text-justify w-100">
+                <div class="img-box mb-3">
+                  <img src="images/s-ops.png" alt="Operations Icon">
+                </div>
+                <h4>Operations & Systems Package</h4>
+                <p>
+                  A complete, done-for-you system designed to bring clarity, structure, and efficiency to your business.  
+                  This package combines <strong>operations management</strong>, <strong>systems and process design</strong>,  
+                  <strong>team training and development</strong>, and <strong>executive support</strong> into one seamless framework.  
+                  From SOP creation and reporting systems to onboarding workflows and scaling strategies —  
+                  it’s everything you need to make your operations run smoothly and sustainably.
+                </p>
+                <a href="service.html" target="_blank">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <br>
+          <!-- End Single Operations Package Row -->
+
           <div class="row">
             <div class="col-md-6 reveal">
-              <div class="box">
+              <div class="box text-justify">
                 <div class="img-box">
                   <img src="images/s-1.png" alt="">
                 </div>
@@ -200,7 +227,7 @@
               </div>
             </div>
             <div class="col-md-6 reveal">
-              <div class="box align-items-end align-items-md-start text-right text-md-left">
+              <div class="box align-items-end align-items-md-start text-justify">
                 <div class="img-box">
                   <img src="images/s-2.png" alt="">
                 </div>
@@ -218,7 +245,7 @@
           </div>
           <div class="row">
             <div class="col-md-6 reveal">
-              <div class="box">
+              <div class="box text-justify">
                 <div class="img-box">
                   <img src="images/s-3.png" alt="">
                 </div>
@@ -234,7 +261,7 @@
               </div>
             </div>
             <div class="col-md-6 reveal">
-              <div class="box align-items-end align-items-md-start text-right text-md-left">
+              <div class="box align-items-end align-items-md-start text-justify">
                 <div class="img-box">
                   <img src="images/s-4.png" alt="">
                 </div>
@@ -278,31 +305,31 @@
 
     </div>
     <!-- contact section -->
-    <section class="contact_section">
+     <section class="contact_section">
       <div class="container">
         <div class="heading_container reveal">
-          <h2>
-            Let's Get In Touch!
-          </h2>
+          <h2>Let's Get In Touch!</h2>
         </div>
       </div>
+
       <div class="container contact_bg layout_padding2-top">
         <div class="row reveal">
           <div class="col-md-6">
-            <div class="contact_form ">
-              <form action="">
-                <input type="text" placeholder="Name ">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Message" class="message_input">
-                <button>
-                  Send
-                </button>
+            <div class="contact_form">
+              <form action="contact.php" method="POST" novalidate>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" class="message_input form-control" placeholder="Message" required></textarea>
+
+                <br>
+                <button type="submit">Send</button>
               </form>
             </div>
           </div>
+
           <div class="col-md-6">
-              <div class="img-box">
-                <img src="images\resource\myImage.png" alt="">
+            <div class="img-box">
+              <img src="images/resource/myImage.png" alt="">
             </div>
           </div>
         </div>
